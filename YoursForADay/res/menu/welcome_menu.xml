@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ashleyridout.yoursforaday.MainActivity">
+
+    <item
+        android:id="@+id/welcome"
+        android:title="Home" />
+    <item
+        android:id="@+id/account"
+        android:title="Account" />
+    <item
+        android:id="@+id/keeperListNewItems"
+        android:title="Keeper- List New Items" />
+    <item
+        android:id="@+id/keeperCurrentItems"
+        android:title="Keeper- Current List" />
+    <item
+        android:id="@+id/seekerFindItems"
+        android:title="Seeker- Find Items" />
+    <item
+        android:id="@+id/pastRentals"
+        android:title="Seeker- Past Rentals" />
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"/>
+
+</menu>
