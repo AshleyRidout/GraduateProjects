@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Yours For a Day</string>
+    <string name="welcomeMessage">To get started, please choose a menu item from the upper right hand
+    corner. Keepers refer to people who want to list items for rent. Seekers refer to people who want
+    to rent an item. Happy renting!</string>
+</resources>
