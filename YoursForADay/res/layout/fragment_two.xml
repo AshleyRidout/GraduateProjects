@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context="com.example.ashleyridout.yoursforaday.FragmentTwo">
+
+    <EditText
+        android:id="@+id/etChangeName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Update Name"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etChangeUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Update UserName"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="@+id/etChangeName"
+        app:layout_constraintRight_toRightOf="@+id/etChangeName"
+        app:layout_constraintTop_toBottomOf="@+id/etChangeName"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etChangePassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:hint="Update Password"
+        android:inputType="textPassword"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/etChangeUserName"
+        app:layout_constraintTop_toBottomOf="@+id/etChangeUserName"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/etChangeUserName"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etChangeEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Update Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="@+id/etChangePassword"
+        app:layout_constraintRight_toRightOf="@+id/etChangePassword"
+        app:layout_constraintTop_toBottomOf="@+id/etChangePassword"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etChangePhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:hint="Update Phone #"
+        android:inputType="phone"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/etChangeEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etChangeEmail"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/etChangeEmail"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/bUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:text="Update"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/etChangePhone"
+        app:layout_constraintTop_toBottomOf="@+id/etChangePhone"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/etChangePhone"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+</android.support.constraint.ConstraintLayout>
