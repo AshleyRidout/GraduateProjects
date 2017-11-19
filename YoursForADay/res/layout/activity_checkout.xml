@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashleyridout.yoursforaday.CheckoutActivity">
+
+    <TextView
+        android:id="@+id/tvPastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:text="You have chosen to rent: "
+        style="@style/YFAD"
+        android:textAppearance="@style/YFADMessage"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ListView
+        android:id="@+id/listCheckout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvPastMessage"
+        app:layout_constraintRight_toRightOf="@+id/tvPastMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastMessage"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/bRentMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:text="RENT ANOTHER ITEM"
+        app:layout_constraintLeft_toLeftOf="@+id/listCheckout"
+        app:layout_constraintRight_toRightOf="@+id/listCheckout"
+        app:layout_constraintTop_toBottomOf="@+id/listCheckout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:onClick="finish"/>
+
+    <Button
+        android:id="@+id/bCheckout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:text="CHECKOUT"
+        app:layout_constraintLeft_toLeftOf="@+id/bRentMore"
+        app:layout_constraintRight_toRightOf="@+id/bRentMore"
+        app:layout_constraintTop_toBottomOf="@+id/bRentMore"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:onClick="sendToPastRentals"/>
+
+
+</android.support.constraint.ConstraintLayout>
