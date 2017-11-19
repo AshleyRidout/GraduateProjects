@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInventoryMsg"
+        style="@style/YFAD"
+        android:textAppearance="@style/YFADMessage"
+        android:textStyle="bold"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="Your Current Items Listed for Rent:"
+         />
+
+    <ListView android:id="@+id/listCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/tvInventoryMsg"
+        app:layout_constraintTop_toBottomOf="@+id/tvInventoryMsg"
+        android:layout_weight="2"
+        android:drawSelectorOnTop="false">
+    </ListView>
+</LinearLayout>
