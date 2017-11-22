@@ -1,3 +1,4 @@
+# Yours For A Day (YFAD)
 Yours For A Day (YFAD) is an Android based application to connect Seekers (users who wish to rent an item) 
 to Keepers (users who wish to rent out an item). There is a registration page to sign up and users are 
 required to input a user name and password to enter YFAD. The information on the registration page is
