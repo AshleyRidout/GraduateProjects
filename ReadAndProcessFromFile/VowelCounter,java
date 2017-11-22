@@ -1,0 +1,68 @@
+/**
+ * @author Ashley.Ridout
+ * @date July 23, 2017
+ * @reference https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html
+ */
+package homework3;
+
+//import all classes in the util package
+import java.util.*;
+
+//class to hold countVowels method
+public class VowelCounter {
+	//variables
+	Scanner input = new Scanner(System.in);
+	String inputFile;
+	int totalVowels = 0;
+
+	//constructor
+	VowelCounter(Scanner input) {
+		this.input = input;
+	}
+
+	/**
+	 * The countVowels method counts the number of vowels within a text file and prints this number 
+	 * 		as well as the TreeMap
+	 * 
+	 * @param input is the scanner inputed text file name from the user
+	 * @param inputFile is the string of text from the inputed file
+	 * @param lowerCase is the inputFile string converted to all lowercase 
+	 * 		so the program only has to find lower case vowels
+	 * @param vowelTreeMap is the TreeMap that holds the vowel and count for each vowel
+	 * @param c is the character at each index of lowerCase
+	 * @param count is the integer the holds count of each vowel 
+	 * @param totalVowels is the int that keeps track of the total vowel count
+	 */
+	public void countVowels() {
+		//while scanner has another token in its input
+		while (input.hasNext()) {
+			inputFile = input.nextLine();
+			//convert string to all lowercase
+			String lowerCase = inputFile.toLowerCase();
+
+			//output to console to show original text in file 
+			System.out.println("String from the inputted file is: " + inputFile);
+			//output to console to show the text was converted to all lowercase for ease of finding all vowels
+			System.out.println(
+					"The string within the file is changed to all lowercase to more easily count vowels: " + lowerCase);
+
+			//creates TreeMap to hold each vowel and its count 
+			Map<Character, Integer> vowelTreeMap = new TreeMap<Character, Integer>();
+			for (int i = 0; i < lowerCase.length(); i++) {
+				char c = lowerCase.charAt(i);
+				/**if there are any of these vowels:a,e,i,o,u within lowerCase, count the number of them 
+				 * and store to vowelTreeMap
+				 */
+				if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+					Integer count = vowelTreeMap.get(c);
+					//ternary operator: for char c, if count is null put 1 for original count, otherwise put count + 1
+					vowelTreeMap.put(c, (count == null ? 1 : count + 1));
+					totalVowels++;
+				}
+			}
+			//output to console
+			System.out.println("Total number of vowels in file: " + totalVowels);
+			System.out.println(vowelTreeMap);
+		}
+	}
+}
