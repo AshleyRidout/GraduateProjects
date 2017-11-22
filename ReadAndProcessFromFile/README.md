@@ -1,4 +1,4 @@
-# ReadAndProcessFromFile
+# Read And Process From File
 Projects in this folder focus on reading from a .txt file, doing some work on the text, 
 and then saving the updated data if there were changes.
 ChangeLastNames reads last names from a .txt file, changes all 'e' and 'a' to 'E' and 'A',
